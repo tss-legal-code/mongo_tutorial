@@ -1,0 +1,26 @@
+GET http://localhost:3000/subscribers
+###
+GET http://localhost:3000/subscribers/639f136833cc9f4f514c98bb
+
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+  "name": "Bob Marley",
+  "subscribedToChannel": "Weed"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/639f136833cc9f4f514c98bb
+
+###
+
+PATCH http://localhost:3000/subscribers/639f136833cc9f4f514c98bb
+Content-Type: application/json
+
+{
+  "name": "Bob Marley SECOND",
+  "subscribedToChannel": "Weed MORE"
+}
